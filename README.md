@@ -1,7 +1,7 @@
 <!-- Copyright (c) 2026 Detlef Beyer -->
 <!-- Maintained in the private development repo (public/README.md) and copied here by scripts/publish-public.mjs. -->
 
-<p align="center"><img src="assets/icon.svg" width="128" height="128" alt="Peerfold-Logo: Ordner mit zwei verbundenen Geräten"></p>
+<p align="center"><img src="assets/icon.svg" width="128" height="128" alt="Peerfold-Logo: Ordner mit umgeschlagener Ecke und zwei verbundenen Geräten"></p>
 
 # Peerfold
 
@@ -22,9 +22,11 @@ Ein Obsidian-Plugin (nur Desktop), mit dem zwei oder mehr Personen einen Ordner 
 
 Über [BRAT](https://github.com/TfTHacker/obsidian42-brat):
 
-1. BRAT aus den Community-Plugins installieren und aktivieren.
-2. In BRAT **Add beta plugin** wählen und `webline/peerfold-obsidian` eingeben.
-3. Unter *Einstellungen → Community-Plugins* **Peerfold** aktivieren. Der Einrichtungsassistent startet.
+1. *Einstellungen → Community-Plugins → Durchsuchen*, nach **BRAT** suchen, installieren und aktivieren.
+2. *Einstellungen → BRAT* (links unter „Community-Plugins“) → **Beta-Plugin hinzufügen** (*Add beta plugin*).
+3. Bei **Repository** `webline/peerfold-obsidian` eintragen, Haken bei **Plugin nach der Installation aktivieren** setzen, **Plugin hinzufügen**. Der Einrichtungsassistent startet.
+
+Schritt für Schritt: [Anleitung, Abschnitt Installation](docs/anleitung.md#installation).
 
 Von Hand: `main.js`, `manifest.json` und `styles.css` aus dem [neuesten Release](https://github.com/webline/peerfold-obsidian/releases/latest) nach `<Vault>/.obsidian/plugins/peerfold/` kopieren. Der Ordner muss genau `peerfold` heißen.
 

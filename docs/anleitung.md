@@ -26,19 +26,22 @@ Mit Peerfold teilst du einen Ordner deines Obsidian-Vaults mit anderen Menschen.
 
 ## Installation
 
+### Über BRAT (empfohlen)
+
+[BRAT](https://github.com/TfTHacker/obsidian42-brat) installiert Plugins, die noch nicht im offiziellen Verzeichnis stehen, direkt von GitHub und hält sie aktuell. Die Menüpunkte unten heißen so, wenn Obsidian auf Deutsch eingestellt ist; die englischen Namen stehen in Klammern.
+
+1. Öffne in Obsidian die *Einstellungen* (Zahnrad unten links) und wähle links **Community-Plugins** (*Community plugins*). Steht dort **Community-Plugins aktivieren** (*Turn on community plugins*), klicke darauf.
+2. Klicke neben „Community-Plugins“ auf **Durchsuchen** (*Browse*), suche nach **BRAT** (Autor: TfTHacker), klicke auf **Installieren** (*Install*) und danach auf **Aktivieren** (*Enable*). Schließe das Suchfenster.
+3. Links in den Einstellungen steht jetzt unter „Community-Plugins“ der Eintrag **BRAT**. Öffne ihn und klicke im Abschnitt „Beta-Plugin-Liste“ auf **Beta-Plugin hinzufügen** (*Add beta plugin*).
+4. Trage im Feld **Repository** `webline/peerfold-obsidian` ein. Lass bei der Version „neueste Version“ stehen, setze den Haken bei **Plugin nach der Installation aktivieren** (*Enable after installing the plugin*) und klicke auf **Plugin hinzufügen** (*Add plugin*).
+5. Nach ein paar Sekunden ist Peerfold installiert und eingeschaltet; der Einrichtungsassistent öffnet sich. Falls nicht: *Einstellungen → Community-Plugins* und den Schalter bei **Peerfold** einschalten.
+
 ### Von Hand
 
 1. Lade aus dem neuesten [Release](https://github.com/webline/peerfold-obsidian/releases/latest) die Dateien `main.js`, `manifest.json` und `styles.css` herunter.
 2. Öffne deinen Vault-Ordner im Finder bzw. Explorer. Der Ordner `.obsidian` ist versteckt: Auf dem Mac blendest du ihn mit <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>.</kbd> ein.
 3. Lege darin den Ordner `.obsidian/plugins/peerfold/` an und kopiere die drei Dateien hinein. Der Ordner muss genau `peerfold` heißen.
 4. Öffne in Obsidian *Einstellungen → Community-Plugins*. Schalte den eingeschränkten Modus aus, lade die Liste neu und aktiviere **Peerfold**.
-
-### Über BRAT
-
-[BRAT](https://github.com/TfTHacker/obsidian42-brat) installiert Beta-Plugins direkt von GitHub und hält sie aktuell.
-
-1. Installiere BRAT aus den Community-Plugins und aktiviere es.
-2. Wähle in BRAT *Add beta plugin* und gib `webline/peerfold-obsidian` ein.
 
 ## Ersteinrichtung
 
@@ -69,13 +72,15 @@ Eine Einladung gilt für **ein Gerät** und **sieben Tage**. Für jede weitere P
 
 ### Die Anfrage bestätigen
 
-Sobald jemand die Einladung annimmt, erscheint bei dir ein Dialog mit Name und **Geräte-ID**. Vergleiche die ID kurz mit der Person (Telefon, Chat), bevor du auf **Zustimmen** klickst. Danach bekommt das Gerät den Ordnerschlüssel und die Dateien.
+Sobald jemand die Einladung annimmt, erscheint bei dir ein Dialog mit Name und **Geräte-ID**. Die Person sieht ihre eigene Geräte-ID direkt nach dem Klick auf **Beitritt anfragen** (später auch unter *Einstellungen → Peerfold → Geräte-ID*). Lass sie dir am Telefon oder im Chat durchsagen und vergleiche ein paar Zeichengruppen, bevor du auf **Zustimmen** klickst. Danach bekommt das Gerät den Ordnerschlüssel und die Dateien.
+
+Warum das Ganze: Wer die Einladung hat, kann damit eine Anfrage stellen. Der Vergleich stellt sicher, dass die Anfrage vom richtigen Gerät kommt und nicht von jemandem, an den die Einladung weitergeraten ist. Hast du die Einladung selbst über einen sicheren Weg verschickt und erwartest genau diese Anfrage, ist das Risiko gering.
 
 ## Einer Einladung folgen
 
-1. Klicke auf den Link in der Einladung. Öffnet sich nichts, kopiere die ganze Nachricht und wähle in der Befehlspalette **Peerfold: Einladung annehmen …**. Peerfold übernimmt die Einladung aus der Zwischenablage.
-2. Wähle den Ort in deinem Vault, z. B. `Geteilt/Projekt`. Am besten ist ein neuer, leerer Ordner.
-3. Klicke auf **Beitritt anfragen**. Die Person, die eingeladen hat, muss zustimmen; sie sieht dabei deine Geräte-ID (zu finden unter *Einstellungen → Peerfold → Geräte-ID*).
+1. Klicke auf den Link in der Einladung. Manche Mailprogramme machen nur den Anfang des langen Links klickbar, oder es öffnet sich nichts. Dann markiere die ganze Nachricht, kopiere sie und wähle in der Befehlspalette (<kbd>Cmd</kbd>/<kbd>Strg</kbd>+<kbd>P</kbd>) **Peerfold: Einladung annehmen …**. Peerfold übernimmt die Einladung aus der Zwischenablage, auch wenn der Link umbrochen ist.
+2. Klicke bei **Ablage in deinem Vault** auf den Ordner-Knopf und wähle per Klick, wo der geteilte Ordner angelegt wird (z. B. `Geteilt`). Der Name ist schon vorgeschlagen; darunter siehst du, wo die Dateien landen.
+3. Klicke auf **Beitritt anfragen**. Peerfold zeigt dir jetzt deine **Geräte-ID**. Die Person, die eingeladen hat, muss zustimmen und fragt dich vielleicht danach.
 4. Nach der Zustimmung kommen die Dateien an. Im selben Netz dauert das Sekunden, über das Postfach bis zum nächsten Abgleich (Standard: eine Minute).
 
 ## Ein Postfach einrichten
@@ -143,6 +148,12 @@ Welcher Weg gerade aktiv ist, zeigt das Statusfenster (Klick auf die Statusleist
 | ↻ 3 | drei Dateien sind noch nicht bei allen angekommen |
 | ✉ 1 | eine Beitrittsanfrage wartet auf dich |
 | ⚠ | ein Problem; ein Klick zeigt Details |
+
+### Hinweise bei Änderungen
+
+Ändert oder löscht ein anderes Mitglied Dateien im geteilten Ordner, zeigt Peerfold einen kurzen Hinweis mit Namen, z. B. „Anna Laptop hat „Protokoll“ in „Projekt“ geändert.“ Bei einer einzelnen Notiz öffnet ein Klick auf den Namen die Notiz. Mehrere Änderungen kurz hintereinander werden zu einem Hinweis zusammengefasst. Abschalten kannst du das unter *Einstellungen → Peerfold → Benachrichtigungen*.
+
+Dort steht unter *Hilfe* auch die installierte **Version**.
 
 ### Konflikte
 

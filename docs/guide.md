@@ -26,19 +26,22 @@ Peerfold lets you share a folder of your Obsidian vault with other people. You w
 
 ## Installation
 
+### With BRAT (recommended)
+
+[BRAT](https://github.com/TfTHacker/obsidian42-brat) installs plugins that are not in the official directory yet straight from GitHub and keeps them up to date.
+
+1. In Obsidian, open *Settings* (gear at the bottom left) and choose **Community plugins** on the left. If you see **Turn on community plugins**, click it.
+2. Next to “Community plugins”, click **Browse**, search for **BRAT** (author: TfTHacker), click **Install** and then **Enable**. Close the search window.
+3. The settings sidebar now lists **BRAT** under “Community plugins”. Open it and, in the “Beta plugin list” section, click **Add beta plugin**.
+4. In the **Repository** field, enter `webline/peerfold-obsidian`. Leave the version at “latest version”, tick **Enable after installing the plugin** and click **Add plugin**.
+5. After a few seconds Peerfold is installed and enabled, and the setup assistant opens. If not: *Settings → Community plugins* and switch on **Peerfold**.
+
 ### Manually
 
 1. From the latest [release](https://github.com/webline/peerfold-obsidian/releases/latest), download `main.js`, `manifest.json` and `styles.css`.
 2. Open your vault folder in Finder or Explorer. The `.obsidian` folder is hidden; on a Mac, show it with <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>.</kbd>.
 3. Create the folder `.obsidian/plugins/peerfold/` and copy the three files into it. The folder must be named exactly `peerfold`.
 4. In Obsidian, open *Settings → Community plugins*. Turn off restricted mode, reload the list and enable **Peerfold**.
-
-### With BRAT
-
-[BRAT](https://github.com/TfTHacker/obsidian42-brat) installs beta plugins straight from GitHub and keeps them up to date.
-
-1. Install and enable BRAT from the community plugins.
-2. In BRAT, choose *Add beta plugin* and enter `webline/peerfold-obsidian`.
 
 ## First-time setup
 
@@ -69,13 +72,15 @@ An invitation is valid for **one device** and **seven days**. Create a new one f
 
 ### Approving the request
 
-As soon as someone accepts the invitation, a dialog shows their name and **device ID**. Compare the ID with the person (phone, chat) before clicking **Approve**. The device then receives the folder key and the files.
+As soon as someone accepts the invitation, a dialog shows their name and **device ID**. The other person sees their own device ID right after clicking **Request to join** (later also under *Settings → Peerfold → Device ID*). Have them read it to you by phone or chat and compare a few groups of characters before clicking **Approve**. The device then receives the folder key and the files.
+
+Why: anyone holding the invitation can send a request with it. Comparing makes sure the request comes from the right device and not from someone the invitation was passed on to. If you sent the invitation over a secure channel and expect exactly this request, the risk is low.
 
 ## Following an invitation
 
-1. Click the link in the invitation. If nothing happens, copy the whole message and choose **Peerfold: Accept invite…** in the command palette. Peerfold picks up the invitation from the clipboard.
-2. Choose a location in your vault, e.g. `Shared/Project`. A new, empty folder works best.
-3. Click **Request to join**. The person who invited you has to approve; they see your device ID (shown under *Settings → Peerfold → Device ID*).
+1. Click the link in the invitation. Some mail programs only make the beginning of the long link clickable, or nothing happens. Then select the whole message, copy it and choose **Peerfold: Accept invite…** in the command palette (<kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>P</kbd>). Peerfold picks up the invitation from the clipboard, even if the link is wrapped.
+2. Under **Location in your vault**, click the folder button and pick where the shared folder is created (e.g. `Shared`). The name is already suggested; below it you see where the files will go.
+3. Click **Request to join**. Peerfold now shows your **device ID**. The person who invited you has to approve and may ask you for it.
 4. After approval the files arrive. On the same network this takes seconds, through the mailbox up to the next check (default: one minute).
 
 ## Setting up a mailbox
@@ -143,6 +148,12 @@ The status window (click the status bar) and the member list show which route is
 | ↻ 3 | three files haven't reached everyone yet |
 | ✉ 1 | a join request is waiting for you |
 | ⚠ | a problem; click for details |
+
+### Change notices
+
+When another member changes or deletes files in a shared folder, Peerfold shows a short notice with their name, e.g. “Anna Laptop changed “Minutes” in “Project”.” For a single note, clicking its name opens it. Several changes in quick succession are combined into one notice. You can turn this off under *Settings → Peerfold → Notifications*.
+
+The installed **version** is shown there too, under *Help*.
 
 ### Conflicts
 

@@ -13,15 +13,14 @@
   </defs>
   <rect width="512" height="512" rx="112" fill="url(#bg)"/>
   <rect x="8" y="8" width="496" height="248" rx="104" fill="url(#glow)"/>
-  <!-- folder -->
-  <path d="M96 166c0-19.9 16.1-36 36-36h68c9.5 0 18.7 3.8 25.5 10.5l17 17c3.4 3.4 7.9 5.3 12.7 5.3H380c19.9 0 36 16.1 36 36v158c0 19.9-16.1 36-36 36H132c-19.9 0-36-16.1-36-36z"
-        fill="none" stroke="#E8F4F2" stroke-width="22" stroke-linejoin="round"/>
-  <!-- sync arcs between two peers -->
-  <path d="M206 262c22-28 78-28 100 0" fill="none" stroke="#E8F4F2" stroke-width="18" stroke-linecap="round"/>
-  <path d="M306 318c-22 28-78 28-100 0" fill="none" stroke="#E8F4F2" stroke-width="18" stroke-linecap="round"/>
-  <path d="M290 246l18 18-24 6" fill="none" stroke="#E8F4F2" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M222 334l-18-18 24-6" fill="none" stroke="#E8F4F2" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- peers -->
-  <circle cx="180" cy="290" r="26" fill="#F2A541"/>
-  <circle cx="332" cy="290" r="26" fill="#F2A541"/>
+  <!-- Same geometry as the monochrome glyph in src/obsidian/icon.ts, on a 24 grid scaled up. -->
+  <g transform="translate(80 72) scale(14.667)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- folder with its corner folded over: the "fold" in Peerfold -->
+    <path d="M21 14.5V9a2 2 0 0 0-2-2h-8.5l-2-2H5a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h10.5" stroke="#E8F4F2" stroke-width="1.6"/>
+    <path d="M21 14.5h-3.5a2 2 0 0 0-2 2V20z" fill="#F2A541" stroke="#F2A541" stroke-width="1.6"/>
+    <!-- two peers, linked -->
+    <path d="M7.5 13h5" stroke="#E8F4F2" stroke-width="1.4"/>
+    <circle cx="7.5" cy="13" r="1.9" fill="#F2A541"/>
+    <circle cx="12.5" cy="13" r="1.9" fill="#F2A541"/>
+  </g>
 </svg>

@@ -1,7 +1,7 @@
 {
 	"id": "peerfold",
 	"name": "Peerfold",
-	"version": "1.4.0",
+	"version": "1.5.0",
 	"minAppVersion": "1.8.7",
 	"description": "Share a folder of your vault with other people: peer-to-peer on the local network, directly over the internet and through an end-to-end encrypted WebDAV or S3 mailbox.",
 	"author": "Detlef Beyer",
