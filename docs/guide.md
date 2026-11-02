@@ -151,7 +151,7 @@ The status window (click the status bar) and the member list show which route is
 
 ### Change notices
 
-When another member changes or deletes files in a shared folder, Peerfold shows a short notice with their name, e.g. “Anna Laptop changed “Minutes” in “Project”.” For a single note, clicking its name opens it. Several changes in quick succession are combined into one notice. You can turn this off under *Settings → Peerfold → Notifications*.
+When another member changes or deletes files in a shared folder, Peerfold shows a notice with their name, e.g. “Anna Laptop changed “Minutes” in “Project”.” For a single note, clicking its name opens it. The notice stays until you click it, so you see it even if you were away from the computer. Further changes are added to the same notice. Once you have dismissed it, that folder stays quiet for 20 minutes. You can turn this off under *Settings → Peerfold → Notifications*.
 
 The installed **version** is shown there too, under *Help*.
 

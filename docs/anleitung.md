@@ -151,7 +151,7 @@ Welcher Weg gerade aktiv ist, zeigt das Statusfenster (Klick auf die Statusleist
 
 ### Hinweise bei Änderungen
 
-Ändert oder löscht ein anderes Mitglied Dateien im geteilten Ordner, zeigt Peerfold einen kurzen Hinweis mit Namen, z. B. „Anna Laptop hat „Protokoll“ in „Projekt“ geändert.“ Bei einer einzelnen Notiz öffnet ein Klick auf den Namen die Notiz. Mehrere Änderungen kurz hintereinander werden zu einem Hinweis zusammengefasst. Abschalten kannst du das unter *Einstellungen → Peerfold → Benachrichtigungen*.
+Ändert oder löscht ein anderes Mitglied Dateien im geteilten Ordner, zeigt Peerfold einen Hinweis mit Namen, z. B. „Anna Laptop hat „Protokoll“ in „Projekt“ geändert.“ Bei einer einzelnen Notiz öffnet ein Klick auf den Namen die Notiz. Der Hinweis bleibt stehen, bis du ihn anklickst – so siehst du ihn auch, wenn du gerade nicht am Rechner warst. Weitere Änderungen fließen in denselben Hinweis ein. Hast du ihn weggeklickt, bleibt es für diesen Ordner 20 Minuten still. Abschalten kannst du das unter *Einstellungen → Peerfold → Benachrichtigungen*.
 
 Dort steht unter *Hilfe* auch die installierte **Version**.
 
